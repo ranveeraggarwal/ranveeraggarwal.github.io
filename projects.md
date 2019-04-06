@@ -1,5 +1,5 @@
 ---
-layout: nopage
+layout: nonpage
 title: Projects
 permalink: /projects/
 description: Self Projects and Course Projects
