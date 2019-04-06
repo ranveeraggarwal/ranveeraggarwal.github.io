@@ -1,0 +1,33 @@
+---
+layout: sublogpost
+title: "Going 3D: An Orbital Menu"
+date: 2016-07-21 12:34:24 +0530
+type: sublog
+sublog: gsoc16
+
+---
+
+The next UI element is a menu with items that circle around a 3D object while still facing the camera.     
+Basically, we need a menu that follows a 3D object. If the 3D object is moved, the menu should follow it, while still facing the camera. For now, we'd like the elements of the menu to be arranged in a circle.
+
+### Understanding the Follower Menu
+A `vtkFollower` inherits from vtkActor and takes in the renderer's active camera as an attribute. And that is it! That's all that's required to get an element to follow the camera.    
+This is how a vtkFollower looks like:
+
+    # mapper = ...
+    followActor = vtk.vtkFollower()
+    followActor.SetMapper(mapper)
+    followActor.SetCamera(renderer.GetActiveCamera())
+  
+### Building an Assembly
+Now, if we keep adding actors like this, we'll run into a problem, that is, all of them will face the camera, but since their origins are separate, they'll move differently. They will move with respect to the world coordinate system's origin, and not the object's.     
+The solution? A `vtkAssembly`. In a `vtkAssembly`, all objects move together. An assembly is kind of an aggregate actor, with properties similar to that of a `vtkActor`.
+  
+Marc-Alex had worked on a `vtkAssembly`-`vtkFollower` combination and that gave me a real good head start. Here's how his menu looked like.
+
+<center>
+    <img src="http://i.giphy.com/N0MmgmevicVYQ.gif" class="img-responsive" style="height:300px">
+    <p>A Basic Follower Menu</p>
+</center>
+
+Now, the task is to integrate this menu with our existing DIPY framework and modify the previously created elements to work with this menu.

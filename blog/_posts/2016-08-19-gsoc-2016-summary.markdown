@@ -1,0 +1,115 @@
+---
+layout: blogpost
+title: "A Lightweight UI for Medical Visualizations"
+date: 2016-8-19 20:20:20 +0530
+type: hiddenblog
+tags: gsoc python
+
+---
+
+Currently, if you have an OpenGL interface, you need to use Qt/GTK or some UI library to create a window and focus out of the OpenGL window to do simple UI tasks like fill forms, click on a button, save a file, etc. Our idea is to get rid of the external interfaces and have the UI built in.     
+ So, all the interaction happens within the 3D world interface.
+ 
+Currently, no library in Python offers such a functionality, much needed during scientific visualisations.     
+So, we built this cross platform minimal interface on top of VTK, which provides a very simple but powerful API, and can be tweaked to create futuristic interfaces. 
+
+
+### The Project
+A complete list of all my commits into the project are listed [here](https://github.com/ranveeraggarwal/dipy/commits/MRG_scifi_ui?author=ranveeraggarwal).    
+Here's the [PR \[\#1111\]](https://github.com/nipy/dipy/pull/1111) with all the changes.    
+Here's what we did:
+
+#### Building a Button
+Using `vtkTexturedActor2D` we built a button with functionalities to change icons and add callbacks. This is what we got.
+
+<center>
+    <img src="/img/sublogs/gsoc16/button1-0.gif" class="img-responsive" style="height:300px">
+    <p>A button overlay</p>
+</center>
+
+#### A Text Input Field
+We built a textbox using `vtkTextActor` and added ways to edit the text in the text box. Starting from an editable actor, we ended up with a multi-line text box. We rewrote a lot of code while building this and this is where we ended up with the idea of having a generic UI super class for all the UI elements. This element also introduced ui parameters (to pass between the element and the interactor) which were later deprecated. 
+
+<center>
+    <img src="/img/sublogs/gsoc16/textbox3-0.gif" class="img-responsive" style="height:300px">
+    <p>A text box</p>
+</center>
+
+#### Line Sliding
+While building the line slider, we realised the need for multiple elements within one element. This is where the idea of a common `set_center` method came up. This element also introduced changes in the way we added elements to the renderer. We also introduced a `ui_list` for each element that carries all the sub-elements in that element. We ended up with this.
+
+<center>
+    <img src="http://i.giphy.com/L6eTW6BC91tew.gif" class="img-responsive" style="height:300px">
+    <p>The Line Slider</p>
+</center>
+
+#### Circular Slider
+Using techniques similar to above, we built a circular slider, using a lot of math. The circular slider underwent a lot of modifications while adding it to the panel because we wanted to maintain a constant value while moving it around. 
+ 
+ <center>
+     <img src="http://i.giphy.com/UpmVl5a064Qgg.gif" class="img-responsive" style="height:300px">
+     <p>The Circular Slider</p>
+ </center>
+ 
+#### 3D Menus
+Moving on, the idea was to use the existing elements in 3D. Using `vtkAssembly` and `vtkFollower`, the former taking a lot of time to understand (but thanks to efforts by my mentors, it turned out to be not so convoluted), we successfully ported several 2D elements to 3D. We couldn't do 3D sliding, so that is something we will be appending to future work.
+
+<center>
+    <img src="http://i.giphy.com/b0pJ7djNSIWFa.gif" class="img-responsive" style="height:300px">
+    <p>The Orbital Menu</p>
+</center>
+
+<center>
+    <img src="http://i.giphy.com/V5vBMyzestnIA.gif" class="img-responsive" style="height:300px">
+    <p>A More Complex Orbital Menu</p>
+</center>
+
+#### A 2D Panel
+A 2D Panel is basically a collection of 2D elements. Built in such a way that they relatively stay the same, not depending on the size of the panel, the panel turned out to be more useful than we thought after we managed to set up a panel of panels.    
+We also used the `set_center`s recursively to move the panel with all its elements around. We also used it to align panels to the left or right of the screen.
+ 
+ <center>
+     <img src="http://i.giphy.com/p5k3vQjkMKnEA.gif" class="img-responsive" style="height:300px">
+     <p>A Panel</p>
+ </center>
+ 
+ <center>
+     <img src="http://i.giphy.com/10Ob1lTP9mjO1i.gif" class="img-responsive" style="height:300px">
+     <p>A Right-Aligned Panel</p>
+ </center>
+
+#### A File Menu
+The time had come to build a file dialog. Using `os` and `glob.glob` we built a file menu for displaying files in the current folder and changing directories when clicked. 
+ 
+<center>
+     <img src="http://i.giphy.com/cdJVIQrz7MiPe.gif" class="img-responsive" style="height:300px">
+     <p>The File Menu</p>
+ </center>
+ 
+#### A File Dialog
+To put all that we had done to test, we built a file save dialog. This used almost everything we had built till now - panels, buttons, text box, etc. Here, for inter-object communication, we introduced optional parent references for each element. In the end, it all worked out well :)
+ 
+<center>
+     <img src="http://i.giphy.com/q2u8f5b0lPi7e.gif" class="img-responsive" style="height:300px">
+     <p>The File Menu</p>
+ </center>
+ 
+### Future Work
+Here's what we want to do in the future:
+
+* Build robust 3D elements
+* Convert the prototype elements to futuristic looking elements
+* Add unit tests - we don't have a unit testing framework right now, we are looking for one
+
+### Acknowledgements
+There are countless brilliant brains that went behind this project.
+
+Both my mentors, [Eleftherios Garyfallidis](http://garyfallidis.github.io/) and [Marc-Alexandre Côté](http://marccote.github.io/) have stood by my side, all through the summer, with regular (and at times more than that) meetings, reviews and suggestions. I could ping them at any odd time of the day and they would promptly reply to all my doubts. [The Story of the Rabbit's PhD Thesis](http://aix1.uottawa.ca/~fgingras/doc/rabbit.html) holds true.
+
+The people who built VTK and those who built the Python wrapper for it have done an amazing job. It's an amazing framework, still in development. I am also indebted to the people who discuss all their doubts online and leave breadcrumbs leaving to the right resource.
+
+And lastly, my colleagues who gave me valuable feedback like, "Try red!". 
+ 
+ Thank you all!
+
+ [\[List of Commits\]](https://github.com/ranveeraggarwal/dipy/commits/MRG_scifi_ui?author=ranveeraggarwal) &nbsp; [\[Pull Request\]](https://github.com/nipy/dipy/pull/1111) &nbsp; [\[Link to Blogs\]](http://ranveeraggarwal.com/subblogs/gsoc-16/)

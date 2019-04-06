@@ -1,0 +1,17 @@
+---
+layout: sublogpost
+title: "2D GUI: Completed"
+date: 2016-07-14 16:50:34 +0530
+type: sublog
+sublog: gsoc16
+
+---
+
+We now have all the 2D GUI elements in place. Any 2D GUI that will now be built will be a modification of these elements.
+
+Another important aspect of building these primitive elements is that we have now laid down a basic structure of how the elements should look like. Anything can now be built similarly.
+
+### Next Task 
+After the 2D GUI elements, we now have to build a follower menu. A follower menu for a 3D element is a menu that follows the element around when it moves and yet faces the camera at all times. A single follower element is easy to implement using `vtkFollower` but we need an aggregate of actors to follow. For this, `vtkAssembly` needs to be used.
+  
+  Therefore, the next task is getting `vtkAssembly` to work along with `vtkFollower`.

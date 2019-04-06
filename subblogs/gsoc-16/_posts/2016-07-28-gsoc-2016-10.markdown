@@ -1,0 +1,33 @@
+---
+layout: sublogpost
+title: "Further Progress on Orbital Menu"
+date: 2016-07-28 16:12:00 +0530
+type: sublog
+sublog: gsoc16
+
+---
+
+Last week, we began building an orbital menu. There is now some progress, with the basic elements working well with it.     
+We now have text, a button and cubes working directly with the orbital menu which work very similar to the 2D GUI.
+ 
+### Building the Menu
+Using the ideas from Marc's example, the Assembly-Follower combination was integrated into our existing code. The assembly has the object, an orbit (a disk) and of course, the parts. We allotted these cubes, positions at 360/(number of parts) angles to the X-Axis. This is how it looks like:
+
+<center>
+    <img src="http://i.giphy.com/b0pJ7djNSIWFa.gif" class="img-responsive" style="height:300px">
+    <p>The Orbital Menu</p>
+</center>
+
+We can also add other types of elements on the menu:
+
+<center>
+    <img src="http://i.giphy.com/V5vBMyzestnIA.gif" class="img-responsive" style="height:300px">
+    <p>A More Complex Orbital Menu</p>
+</center>
+
+The possibilities are endless! :D
+
+### ToDo
+
+* Sliders currently don't work because sliding in 3D is a bit complex.
+* There is a need to explore better methods to allot elements to the orbit. 

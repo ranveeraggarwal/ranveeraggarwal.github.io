@@ -1,0 +1,13 @@
+- "title": "Tracking and Reconstruction of a Human Body"
+  "image": "http://i.imgur.com/oPvkgUv.png"
+  "description": "We are designing a novel method to reconstruct human body using noisy point cloud data in real-time from a single Kinect. The method is currently being implemented in OpenFrameworks using OpenNI and NiTE. We'll be further investigating methods to render the reconstructed model in virtual reality, viewable on a head mounted display like Oculus."
+  "repo": ""
+  "project-type": "Undergraduate Dissertation"
+  "organisation": "IIT Bombay"
+
+- "title": "Traffic Infraction Detection through Mobile Devices"
+  "image": "http://i.imgur.com/L2ymtBh.png"
+  "description": "We are exploring ways to detect signal jumping and tailgating using a mobile phone mounted on the vehicle dashboard. Crowd-sourced data and object detection techniques will be employed to get data from videos in near real-time."
+  "repo": ""
+  "project-type": "Research and Development Project"
+  "organisation": "IIT Bombay"

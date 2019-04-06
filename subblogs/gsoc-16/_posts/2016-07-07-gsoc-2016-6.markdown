@@ -1,0 +1,26 @@
+---
+layout: sublogpost
+title: "The Slider Works!"
+date: 2016-07-07 16:20:45 +0530
+type: sublog
+sublog: gsoc16
+
+---
+
+[For the past two weeks](http://ranveeraggarwal.com/subblogs/gsoc-16/gsoc-2016-5) I have been stuck with the slider, with a weird bug here and a weird bug there, VTK/Python version issues, OS issues, etc. I installed Ubuntu to find out more about it, and changed to Python2.7.11-VTK6.3.0, like everyone else.    
+ It's all been fixed, except the one in the last blog post. It seems like a VTK-7 bug or change of API. I have posted a [question on Stackoverflow](http://stackoverflow.com/q/38211381/2302611) regarding the same, I'll fix it as soon as I find how to do it.
+    
+Another modification to the slider is the text actor. It now is a standalone object, catering specifically to the Slider. Doing so also fixed a bug that I had with VTK-6.
+
+The final modification, putting a nail in the coffin for the line clicking issue (someone had faced it [previously](http://vtk.1045678.n5.nabble.com/Line-picking-td1253732.html) too). I did this by constructing a thin rectangle using polygons. As correctly pointed out by my mentors, it's probably because a line is composed of two points and OpenGL events probably work with triangles.  
+
+Here's how it now looks like.
+
+<center>
+    <img src="http://i.giphy.com/L6eTW6BC91tew.gif" class="img-responsive" style="height:300px">
+    <p>The Slider</p>
+</center>
+
+We're finally done with the slider and it's time to move on to the next task.
+
+PS: I passed the mid-term review. It was a team effort ^\_^.

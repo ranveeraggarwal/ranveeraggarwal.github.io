@@ -1,0 +1,40 @@
+---
+layout: sublogpost
+title: "Making a Text Input Field"
+date: 2016-6-6 23:00:00 +0530
+type: sublog
+sublog: gsoc16
+
+---
+
+In my last two blog posts, [#0](http://ranveeraggarwal.com/subblogs/gsoc-16/gsoc-2016-0) and [#1](http://ranveeraggarwal.com/subblogs/gsoc-16/gsoc-2016-1), I had successfully set up a UI framework and begun building primitive UI objects. A 2D button overlay was built, and the next task was to make a text field. 
+
+Well, how about this?
+
+<center>
+    <img src="/img/sublogs/gsoc16/textbox2-0.gif" class="img-responsive" style="height:400px">
+    <p>A text box, this is.</p>
+</center>
+
+It works, but is incomplete. Yes, it is a text box, but there are a few things you expect from a text field that it doesn't do. 
+
+### To Do on the Text Box
+
+* Two types of text boxes - single line and multi line
+* Limit size of text box, store the overflow somewhere else and display only if backspace is pressed repeatedly enough
+* Capture Ctrl/Alt/Space as separate keys and render them as they should
+* Maybe draw boundaries around the text box to make it look more like an input field
+ 
+Again, doing all these in VTK isn't easy and would involve doing stuff from first principles. (Wow! Word Processors must be really hard to make!)
+
+### Implementation
+The interactor is the one that captures the key stroke. The callback function for the text box is outside the interactor class. There's no way a direct transfer of key stroke can take place. But, what the interactor does have is the renderer. And the renderer has the text box. Therefore, if we somehow store a list of UI elements in the renderer and query that list for a text box once the picker picks one up and compare, we can get the right text box to work upon. For doing so, a parent class for all UI elements was created and the renderer was made to store a list of all such elements. Thanks to this idea by my mentors we could now pass keystrokes to the text box class and add and remove characters at will.
+  
+For making a dynamic multi line text box, I stored a number which describes the number of current lines. If this number is exceeded by the length of the text divided by the number of characters in a line, I simply add a newline character and increase the current number of lines.
+ 
+For hiding overflows, I'll probably keep a variable for archive text and dynamically update it.
+
+### Next Steps
+
+* Fix the text box - make it more user friendly
+* Make a draggable slider. This is going to take some effort

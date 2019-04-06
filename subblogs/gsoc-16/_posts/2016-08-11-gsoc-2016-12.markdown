@@ -1,0 +1,40 @@
+---
+layout: sublogpost
+title: "Window Event Handling for Panel"
+date: 2016-08-11 17:17:00 +0530
+type: sublog
+sublog: gsoc16
+
+---
+
+### Moving the Panel
+
+The panel that we began working on last week has finally been completed. Here are the major changes:
+
+1. Every UI element now has a `set_center` function. This function does exactly what it says, it sets the center of the UI element to where we want.
+2. We now store the relative positions of the elements within a panel. This is so that we can move the panel around and the elements can be re-allotted centers in accordance with the panel's new center.
+3. Major changes in how sliders work. This is basically to facilitate the movement of individual slider elements when the slider as a whole is moved.
+
+Using the above, we can now move the panel around.
+
+<center>
+    <img src="http://i.giphy.com/p5k3vQjkMKnEA.gif" class="img-responsive" style="height:300px">
+    <p>Moving the Panel Around</p>
+</center>
+
+### Aligning the Panel
+
+Now, the panel can be left-aligned or right-aligned to the window. Left-alignment means that its position with respect to the left window boundary will remain constant. Similarly for right-alignment. This was done using the `set_center` in the above step and window modification events.
+ 
+<center>
+    <img src="http://i.giphy.com/10Ob1lTP9mjO1i.gif" class="img-responsive" style="height:300px">
+    <p>A Right-Aligned Panel</p>
+</center>
+
+### What's next
+
+GSoC ends in less than a couple of weeks. In this final sprint the following needs to be done:
+ 
+* A file dialog needs to be built. For now, we'll be saving and opening files. 
+* Refactoring for existing code.
+* Making PRs into master.

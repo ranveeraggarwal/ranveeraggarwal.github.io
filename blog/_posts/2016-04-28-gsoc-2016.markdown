@@ -1,0 +1,37 @@
+---
+layout: blogpost
+title: "A Pythonic Summer"
+date: 2016-4-28 00:00:00 +0530
+type: hiddenblog
+tags: gsoc python
+
+---
+
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style>
+
+<img src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-logo-horizontal-800.png" class="img-responsive">
+
+I have been selected for Google Summer of Code (GSoC) 2016. I'll be working on a SciFi UI using Python-VTK under [DIPY](http://nipy.org/dipy/) (Python Software Foundation) and I'll be mentored by [Eleftherios Garyfallidis](http://garyfallidis.github.io/) and [Marc-Alexandre Côté](http://marccote.github.io/).
+
+DIPY is a python toolbox for analysis of MR diffusion imaging. It's an open source research project that implements a broad range of algorithms for denoising, registration, reconstruction, tracking, clustering, visualization, and statistical analysis of MRI data.   
+
+### Project Description
+
+Before we go into what I'll be doing this summer, I'd like you to watch a small (but cool) video.
+
+<div class='embed-container'><iframe src='http://player.vimeo.com/video/103533906' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+<br>
+
+See those cool, futuristic interfaces? Gee, how cool would it be if those were real? Well, that's kinda what we'll be trying to achieve, except that the controls will be used for tractography exploration instead of space. 
+  
+The main idea is to develop new futuristic widgets directly using VTK (Visualization Toolkit) without calling any external libraries. These new widgets will be useful because we will be able to use them to navigate in tractographies and allow neurosurgeons and other neuroscientists to have a unique impression and user experience when using DIPY's tools. 
+
+The possible deliverable by the end of the summer would consist of field-dialogues, sliding panels with buttons and dynamic actor menus (3D menus on objects).
+
+The fact that the project is completely open ended and involved building something entirely new makes it that much more intriguing. 
+
+### About Google Summer of Code
+
+[Google Summer of Code (GSoC)](https://summerofcode.withgoogle.com/) is a yearly internship program by Google to help the open source communities to reach out to student contributors. Organisations pitch projects, and when selected, pick up university students to work on these floated projects or their own ideas related to the organisation's project(s). Last year, I completed my GSoC with KDE and it was an amazing experience. This year, I hope it'll be a notch higher.
+
+<img src="https://developers.google.com/open-source/gsoc/resources/downloads/GSoC-icon.svg" hidden="true">
