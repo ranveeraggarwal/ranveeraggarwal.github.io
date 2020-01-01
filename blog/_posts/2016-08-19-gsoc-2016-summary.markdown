@@ -1,9 +1,9 @@
 ---
 layout: blogpost
-title: "A Lightweight UI for Medical Visualizations"
+title: "A Lightweight UI for Medical Visualizations (GSoC 2016)"
 date: 2016-8-19 20:20:20 +0530
-type: hiddenblog
-tags: gsoc python
+type: blog
+tags: gsoc python dipy
 
 ---
 

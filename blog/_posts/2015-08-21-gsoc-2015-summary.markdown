@@ -1,8 +1,8 @@
 ---
 layout: blogpost
-title: "GSoC ’15: A Summary"
+title: "A Summer with KDE (GSoC 2015)"
 date: 2015-8-6 12:00:00 +0530
-type: hiddenblog
+type: blog
 tags: gsoc kde
 
 ---

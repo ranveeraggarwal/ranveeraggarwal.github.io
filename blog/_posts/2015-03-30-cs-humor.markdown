@@ -2,8 +2,8 @@
 layout: blogpost
 title: "Programming Humor"
 date: 2015-3-30 11:04:20 +0530
-type: hiddenblog
-tags: programmming
+type: blog
+tags: programmming humor random
 
 ---
 
