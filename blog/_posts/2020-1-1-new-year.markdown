@@ -28,6 +28,6 @@ Crash diets, long continuous work hours, 4-hour workouts just don't work. Instea
 Honestly, I don't know. None of the above hit me on January 1st 2019. I started fixing my sleep habits in February, my fitness journey late December 2018, reading books late January 2019 and so on. But the fact that it's a new year and there's 300+ days of possiblities made me believe that I could do it. 
 
 3 years ago, I had screenshot-ed this pearl of wisdom from a stranger on Hacker News:
-![HN Comment](https://i.imgur.com/iNM9gkV.jpg)    
+<img src="https://i.imgur.com/iNM9gkV.jpg" class="img img-responsive">
 And this year, I think I'm going to try this out.    
 For starters, I want to blog more. From a framework-of-micro-improvements perspective, one blogpost every Saturday. 
