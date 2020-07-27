@@ -31,3 +31,5 @@ As the ancient Chinese proverb says,
 > The best time to plant a tree was 20 years ago. The second best time is now.
 
 Well, you know what to do.
+
+Oh and those who are curious regarding where I am with music now, well it's in a state of indefinite pause. I realised that there's only so much bandwidth I can give to learning stuff and there are other priorities in life right now.
