@@ -4,6 +4,7 @@ title: "GSoC Pre-Selection: Do's and Don'ts"
 date: 2016-12-09 12:00:00 +0530
 type: blog
 tags: gsoc python
+disqus: true
 
 ---
 

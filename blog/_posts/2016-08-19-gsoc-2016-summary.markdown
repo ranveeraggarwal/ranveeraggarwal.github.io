@@ -4,6 +4,7 @@ title: "A Lightweight UI for Medical Visualizations (GSoC 2016)"
 date: 2016-8-19 20:20:20 +0530
 type: blog
 tags: gsoc python dipy
+disqus: true
 
 ---
 

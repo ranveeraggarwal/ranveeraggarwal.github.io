@@ -4,6 +4,7 @@ title: "A Summer with KDE (GSoC 2015)"
 date: 2015-8-6 12:00:00 +0530
 type: blog
 tags: gsoc kde
+disqus: true
 
 ---
 It seems like yesterday when I was an open source newbie on IRC, equipped with the knowledge of programming in C++, learnt through university courses. Little did I know that writing programs is just the prologue of the process called software engineering. Not wary of things like building, good practices and writing code that doesn’t just run on my machine, but on the machines of all those who are affected by it, I started the summer struggling through cmakes and compiler errors and understanding code that was written well, just not by me.
