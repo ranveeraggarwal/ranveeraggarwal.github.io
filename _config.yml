@@ -13,7 +13,7 @@ plugins: [jekyll-paginate]
 permalink: /:categories/:title
 
 # Details for the RSS feed generator
-url: "http://ranveeraggarwal.com/feed.xml"
+url: "http://ranveeraggarwal.com"
 author: "Ranveer Aggarwal"
 
 # Disqus config
