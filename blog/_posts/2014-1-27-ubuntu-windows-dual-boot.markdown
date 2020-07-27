@@ -1,7 +1,7 @@
 ---
-layout: blogpost
-title:  "Dual Booting Windows with Ubuntu"
-date:   2014-1-27 15:04:20 +0530
+layout: post
+title: "Dual Booting Windows with Ubuntu"
+date: 2014-1-27 15:04:20 +0530
 type: blog
 tags: tutorial ubuntu windows
 

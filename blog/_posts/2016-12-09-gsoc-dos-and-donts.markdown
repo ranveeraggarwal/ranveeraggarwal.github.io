@@ -1,13 +1,11 @@
 ---
-layout: blogpost
+layout: post
 title: "GSoC Pre-Selection: Do's and Don'ts"
 date: 2016-12-09 12:00:00 +0530
 type: blog
 tags: gsoc python
 
 ---
-
-Originally, an answer to [What do mentors see in a participant while selecting them for GSoC?](https://www.quora.com/What-do-mentors-see-in-a-participant-while-selecting-them-for-GSoC-What-skills-should-a-participant-posses-and-how-is-selection-done) on [Quora](https://www.quora.com/).
 
 If you were a mentor, what would you want in a student?
 
@@ -92,3 +90,5 @@ Here are some other tips:
 4. Most communities have difficulty levels on their ideas page. Choose the harder projects, you can be sure there’s little or no competition. Plus, no one expects you to complete 100% of such projects in a short span of 3 months.
 5. Get your application reviewed by multiple people before sending it across.
 6. Start by December if you’re applying by April [Credits: Kalpesh].
+
+Originally, an answer to [What do mentors see in a participant while selecting them for GSoC?](https://www.quora.com/What-do-mentors-see-in-a-participant-while-selecting-them-for-GSoC-What-skills-should-a-participant-posses-and-how-is-selection-done) on [Quora](https://www.quora.com/).

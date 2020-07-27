@@ -1,5 +1,0 @@
-- "university": "IIT Bombay"
-  "image": "{{ site.baseurl }}/img/iitb.png"
-  "degree": "B.Tech. (Hons.) &middot; Computer Science and Engineering"
-  "specialization": "Computer Graphics"
-  "courses": "Computer Graphics, Digital Image Processing, Advanced Computer Graphics, Digital Geometry Processing, Computer Vision, Infographics and Data Visualisation, Human Computer Interaction, Technology and Animation, Basics of Visual Communication, Computer Networks, Network Security, Principles of Data and Systems Security. Computer Programming and Utilization, Abstractions and Paradigms in Programming, Data Structures and Algorithms, Discrete Structures, Automata Theory and Logic, Logic Design, Design and Analysis of Algorithms, Software Systems Lab, Computer Networks, Computer Architecture, Databases, Artificial Intelligence, Computer Architecture, Operating Systems, Databases, Compilers, Embedded Systems, Introduction to Ergonomics, Calculus, Linear Algebra, Data Analysis and Interpretation, Modern Physics and Chemistry, Engineering Graphics and Drawing, Differential Equations, Economics, Environmental Studies, Indian Culture and Tradition, Numerical Analysis"

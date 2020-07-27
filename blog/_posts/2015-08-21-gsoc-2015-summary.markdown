@@ -1,5 +1,5 @@
 ---
-layout: blogpost
+layout: post
 title: "A Summer with KDE (GSoC 2015)"
 date: 2015-8-6 12:00:00 +0530
 type: blog
@@ -7,8 +7,6 @@ tags: gsoc kde
 
 ---
 It seems like yesterday when I was an open source newbie on IRC, equipped with the knowledge of programming in C++, learnt through university courses. Little did I know that writing programs is just the prologue of the process called software engineering. Not wary of things like building, good practices and writing code that doesn’t just run on my machine, but on the machines of all those who are affected by it, I started the summer struggling through cmakes and compiler errors and understanding code that was written well, just not by me.
-
-<img src="http://i.imgur.com/2TiPasP.jpg" class="img-responsive">
 
 Step 1 was packaging software and publishing it on launchpad. My mentor, Jonathan Riddell taught me this process by going through instructions step by step, and every time, giving me knowledge about tools that I wasn’t aware about. After a lot of failed attempts in sending patches upstream, I finally managed to get PackageKit and PackageKit-Qt5 pushed on to launchpad, and they built successfully. This was done because in everything following this, these two applications would be required. And this was a success because I didn’t face any problems in the subsequent parts of the project. The packages can be found [here](https://launchpad.net/~ranveeraggarwal/+archive/ubuntu/kpackages). I have also described a sequence of steps as learnt in the process in an earlier blogpost.
 

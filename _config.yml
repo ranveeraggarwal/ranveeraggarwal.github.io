@@ -1,32 +1,20 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+name: Ranveer Aggarwal
+description: Programmer. Reader. Explorer.
+meta_description: "Ranveer Aggarwal's Web Space."
 
-# Site settings
-title: Ranveer Aggarwal
-email: ranveeraggarwal@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Ranveer Aggarwal's Homepage. A repository of writings, experiences and code.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://ranveeraggarwal.com" # the base hostname & protocol for your site
-twitter_username: ranveeraggarwal
-github_username:  ranveeraggarwal
-facebook_username:  ranveeraggarwal
-stackoverflow_username: ranveer
-
-# Build settings
 markdown: kramdown
-permalink: /:categories/:title
 highlighter: rouge
+logo: false
+paginate: 10
+baseurl: /
+domain_name: "http://ranveeraggarwal.com"
+google_analytics: "UA-74279105-1"
+plugins: [jekyll-paginate]
+permalink: /:categories/:title
 
-# Gems
-plugins:
-  - jekyll-sitemap
-  - rouge
+# Details for the RSS feed generator
+url: "http://ranveeraggarwal.com/feed.xml"
+author: "Ranveer Aggarwal"
 
-# Pagination
-# paginate:   6
-# paginate_path:  "blog/page:num/"
+# Disqus config
+disqus-shortname: "ranveeraggarwal"

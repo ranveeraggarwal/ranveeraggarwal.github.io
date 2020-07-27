@@ -1,5 +1,5 @@
 ---
-layout: blogpost
+layout: post
 title: "Entering the Next Decade"
 date: 2020-01-01 14:30:00 +0530
 type: blog
