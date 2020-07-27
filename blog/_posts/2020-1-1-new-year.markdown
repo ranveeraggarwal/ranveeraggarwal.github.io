@@ -31,4 +31,8 @@ Honestly, I don't know. None of the above hit me on January 1st 2019. I started 
 3 years ago, I had screenshot-ed this pearl of wisdom from a stranger on Hacker News:
 <img src="https://i.imgur.com/iNM9gkV.jpg" class="img img-responsive">
 And this year, I think I'm going to try this out.    
-For starters, I want to blog more. From a framework-of-micro-improvements perspective, one blogpost every Saturday. 
+For starters, I want to blog more. From a framework-of-micro-improvements perspective, one blogpost every Saturday. [1]
+
+---
+
+[1] Update (26th July 2020): Yeah yeah, that didn't happen. Anyhow, better late than never. Expect something soon.
