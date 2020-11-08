@@ -13,11 +13,11 @@ Borrowed a Guitar from a friend and went through the basics. One night, as I lay
 
 > I wish I had started this when I was 17.
 
-I could've. My parents, realizing that the only way their typical studious kid was going to be cool in college (thanks American movies, never has an entire generation of kids felt this bad about their lives) was by playing Bohemian Rhapsody on the six string. Dumb old (young) me, buried in Agatha Christies and Enid Blytons and Princes of Persia was like pfft! Long term gratification, shmong term gratification. #LiveInTheMoment #CarpeDiem
+I could've. My parents, realizing that the only way their typical studious kid was going to be cool in college was by playing Wonderwall on the six string. They enrolled me in a Guitar class. I saw other kids younger than me playing well already and was dejected. Didn't continue further. 
 
-Anyhow, so as the night progressed, imagining a life that could've been (a Metallica Tshirt, long hair, a red-white colored electric guitar playing Sweet Child of Mine), I was struck with an interesting thought. I dream-traveled into the future.
+Anyhow, so as the night progressed, imagining a life that could've been, I was struck with an interesting thought. I dream-traveled into the future.
 
-It's 8 years from now. I am 33. Same dilapidated room, same single bed that's too small for me to completely fit in. Future me has a lot less hair on his head, a lot more fat on his belly and wrinkles have started showing up (hey American movies? Not cool, see what you're doing to my mind's eye). And similar thoughts plague me.
+It's 8 years from now. I am 33. Same dilapidated room, same single bed that's too small for me to completely fit in. Future me has a lot less hair on his head, a lot more fat on his belly and wrinkles have started showing up. And similar thoughts plague me.
 
 > I wish I had started something creative when I was 25.
 
