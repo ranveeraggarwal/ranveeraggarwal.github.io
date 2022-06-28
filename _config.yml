@@ -18,5 +18,3 @@ author: "Ranveer Aggarwal"
 
 # Disqus config
 disqus-shortname: "ranveeraggarwal"
-
-include: ["wwf/.well-known"]
