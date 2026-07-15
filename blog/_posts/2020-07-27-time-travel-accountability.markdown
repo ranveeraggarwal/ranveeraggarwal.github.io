@@ -4,7 +4,6 @@ title: "Time Travel Accountability"
 date: 2020-07-27 15:00:00 +0530
 type: blog
 tags: musings goals accountability
-disqus: true
 
 ---
 
