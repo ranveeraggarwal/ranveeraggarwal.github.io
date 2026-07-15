@@ -1,4 +1,5 @@
 name: Ranveer Aggarwal
+title: Ranveer Aggarwal
 description: Programmer. Reader. Explorer.
 meta_description: "Ranveer Aggarwal's Web Space."
 
@@ -7,14 +8,22 @@ highlighter: rouge
 logo: false
 paginate: 10
 baseurl: /
-domain_name: "http://ranveeraggarwal.com"
-google_analytics: "UA-74279105-1"
-plugins: [jekyll-paginate]
+domain_name: "https://ranveeraggarwal.com"
+plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 permalink: /:categories/:title
 
 # Details for the RSS feed generator
-url: "http://ranveeraggarwal.com"
+url: "https://ranveeraggarwal.com"
 author: "Ranveer Aggarwal"
+twitter:
+  username: ranveeraggarwal
+  card: summary
+social:
+  name: Ranveer Aggarwal
+  links:
+    - https://github.com/ranveeraggarwal
+    - https://twitter.com/ranveeraggarwal
+    - https://www.linkedin.com/in/ranveeraggarwal/
 
 # Disqus config
 disqus-shortname: "ranveeraggarwal"
