@@ -1,0 +1,39 @@
+---
+layout: default
+title: Bookshelf
+cover: false
+---
+
+<header class="main-header no-cover">
+    <nav class="main-nav overlay clearfix">
+        <a class="back-button icon-arrow-left" href="{{'/' | relative_url }}">Home</a>
+        <a class="subscribe-button icon-feed" href="{{'feed.xml' | relative_url }}">Subscribe</a>
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">Bookshelf</h1>
+            <h2 class="page-description">A few books I love, and why.</h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+<main id="content" class="content" role="main">
+
+    <div class="bookshelf inner">
+        {% assign books = site.books | sort: "title" %}
+        {% for book in books %}
+        <a class="book-card" href="{{ book.url | relative_url }}">
+            {% if book.cover %}
+            <img class="book-cover" src="{{ book.cover | relative_url }}"
+                alt="Cover of {{ book.title }}" loading="lazy" />
+            {% else %}
+            <span class="book-cover book-cover-placeholder">{{ book.title }}</span>
+            {% endif %}
+            <span class="book-card-title">{{ book.title }}</span>
+            <span class="book-card-meta">{{ book.author }}{% if book.year %} &middot; {{ book.year }}{% endif %}</span>
+        </a>
+        {% endfor %}
+    </div>
+
+</main>
