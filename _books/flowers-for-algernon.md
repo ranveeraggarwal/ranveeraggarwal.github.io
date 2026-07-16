@@ -3,8 +3,7 @@ layout: book
 title: "Flowers for Algernon"
 author: "Daniel Keyes"
 year: 1959
-# cover: /assets/images/books/sapiens.jpg
-cover:
+cover: https://covers.openlibrary.org/b/isbn/9780156030304-L.jpg
 ---
 
 This has to be one of my favorite books of all time. If you're reading this, just pick it up, don't look up the premise.
@@ -12,11 +11,11 @@ This has to be one of my favorite books of all time. If you're reading this, jus
 To me, this book touches on several topics that made me ponder, namely, 
 * what intelligence means, and how you perceive people of different intellects
 * what it means to want friends as a person who is different, and how we think of others around us in a large group. 
-* loneliness. You may be surrounded by people and yet feel loney, because sometimes no one gets you.
+* loneliness. You may be surrounded by people and yet feel lonely, because sometimes no one gets you.
 * empathy, support systems
 * ...
 
-Honestly, the book club discussions we've had on this have been hot and I this is one I would revisit time and time again. 
+Honestly, the book club discussions we've had on this have been hot, and this is one I would revisit time and time again. 
 
 Some top tier quotes from the book,
 

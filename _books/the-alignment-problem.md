@@ -1,14 +1,12 @@
 ---
 layout: book
 title: "The Alignment Problem: Machine Learning and Human Values"
-author: "Christian, Brian"
+author: "Brian Christian"
 year: 2020
-# Drop a cover image in assets/images/books/ and point to it here, e.g.
-# cover: /assets/images/books/the-name-of-the-wind.jpg
-cover:
+cover: https://covers.openlibrary.org/b/isbn/9780393635829-L.jpg
 ---
 
-// This is an incomplete review.
+<!-- This is an incomplete review. -->
 
 A page turner! While this thing was written before GenAI took the world by storm, the concepts on AI safety are pretty interesting and relevant. 
 
