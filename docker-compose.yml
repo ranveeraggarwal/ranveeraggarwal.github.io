@@ -1,0 +1,13 @@
+# Run a live-reloading local preview with:
+#   docker compose up
+# then open http://localhost:4000/ (bookshelf at /bookshelf/).
+# Edit any post, book, layout, or CSS file and the browser refreshes itself.
+# Changes to _config.yml need a restart (docker compose restart).
+services:
+  site:
+    build: .
+    ports:
+      - "4000:4000"    # the site
+      - "35729:35729"  # livereload channel
+    volumes:
+      - .:/site        # your working copy, edited live from the host
