@@ -13,6 +13,12 @@ domain_name: "https://ranveeraggarwal.com"
 plugins: [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 permalink: /:categories/:title
 
+# Bookshelf: each file in _books is a book, rendered at /bookshelf/<slug>/
+collections:
+  books:
+    output: true
+    permalink: /bookshelf/:name/
+
 # Details for the RSS feed generator
 url: "https://ranveeraggarwal.com"
 author: "Ranveer Aggarwal"

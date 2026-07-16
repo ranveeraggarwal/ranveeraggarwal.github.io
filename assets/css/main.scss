@@ -135,3 +135,99 @@ table tbody + tbody { border-top-color: var(--border); }
 .site-footer { border-top-color: var(--border); color: var(--muted); }
 .site-footer a { color: var(--muted); }
 .site-footer a:hover { color: var(--accent); }
+
+/* ==========================================================================
+   Bookshelf
+   ========================================================================== */
+
+/* Grid of book covers on /bookshelf/ */
+.bookshelf {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+	gap: 40px 30px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.book-card {
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	border: none;
+	transition: transform ease 0.2s;
+}
+
+.book-card:hover { transform: translateY(-4px); }
+
+.book-cover {
+	display: block;
+	width: 100%;
+	aspect-ratio: 2 / 3;
+	object-fit: cover;
+	border-radius: 3px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+	background: var(--bg-alt);
+}
+
+/* Shown when a book has no cover image yet */
+.book-cover-placeholder {
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 12px;
+	font-family: 'Merriweather', serif;
+	font-size: 14px;
+	line-height: 1.4;
+	color: var(--heading);
+	border: 1px solid var(--border-strong);
+}
+
+.book-card-title {
+	margin-top: 12px;
+	font-family: 'Merriweather', serif;
+	font-size: 15px;
+	line-height: 1.35;
+	color: var(--heading);
+}
+
+.book-card-meta {
+	margin-top: 4px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: var(--muted);
+}
+
+.book-card:hover .book-card-title { color: var(--accent); }
+
+/* Individual book page */
+.book-post-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	gap: 24px;
+	text-align: left;
+}
+
+.book-post-cover {
+	width: 140px;
+	aspect-ratio: 2 / 3;
+	object-fit: cover;
+	border-radius: 3px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+	flex: none;
+}
+
+.book-post-heading { flex: 1 1 240px; }
+
+.book-meta { color: var(--muted); }
+.book-meta .book-author { color: var(--heading); }
+
+@media only screen and (max-width: 500px) {
+	.bookshelf {
+		grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+		gap: 30px 20px;
+	}
+	.book-post-header { justify-content: center; text-align: center; }
+}
